@@ -81,10 +81,10 @@ function nextImg(){
 
 function prevImg(){
 	//change index
-	if(index >0 ){
+	if(index >0){
 		index--;
 	}else{
-		index = data.length;
+		index = data.length -1;
 	}
 	//change the image
 	imgEl.src = data[index].image;
