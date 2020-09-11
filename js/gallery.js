@@ -2,25 +2,32 @@
 let data = [
 	{
 		"image":"https://embed.widencdn.net/img/scprt/3gb9fyak0t/1024px/?u=nkm28l%23quality=75",
-		"title":"MyrtleBeach State Park Pier",
-		"desc":"Myrtle Beach State Park Pier fishing at Sunset"
+		"title":"Myrtle Beach State Park Pier",
+		"desc":"Myrtle Beach State Park Pier fishing at Sunset."
 	},
+	//2
 	{
-		"image":"",
-		"title":"title 2",
-		"desc":"Described image 2"
+		"image":"https://embed.widencdn.net/img/scprt/rou9ry2oyl/1024px/?u=nkm28l%23quality=75",
+		"title":"Myrtle Beach State Park Pier and oak tree",
+		"desc":"Myrtle Beach State Park Pier mid day with oak tree and walking trail."
 	},
 	//3
 	{
-
+		"image":"https://embed.widencdn.net/img/scprt/kpv5rxyzlx/1024px/?u=nkm28l%23quality=75",
+		"title":"Myrtle Beach State Park Pelican",
+		"desc":"Myrtle Beach State Park Pelican taking flight in the evening."
 	},
 	//4
 	{
-
+		"image":"https://embed.widencdn.net/img/scprt/cilcq5v03b/1024px/?u=nkm28l%23quality=75",
+		"title":"Myrtle Beach State Park egret",
+		"desc":"A great white egret catching it's prey at Myrtle Beach State Park."
 	},
 	//5
 	{
-
+		"image":"https://embed.widencdn.net/img/scprt/kf25uzrbez/1024px/?u=nkm28l%23quality=75",
+		"title":"Myrtle Beach State Park Pier Evening.",
+		"desc":"Myrtle Beach State Park Pier in the Evening at Sunset from underneath."
 	}
 ];
 
@@ -59,8 +66,17 @@ function nextImg(){
 	}else{
 		index = 0;
 	}
+
 	//change the image
 	imgEl.src = data[index].image;
+
+	//set text fields and alt.
+	imgEl.src = data[index].image;
+	imgEl.alt = data[index].title;
+	imgEl.height = "600";
+	imgEl.width = "800";
+	document.querySelector("#gallery h3").innerHTML = data[index].title;
+	para.innerHTML = data[index].desc;
 }
 
 function prevImg(){
@@ -71,6 +87,15 @@ function prevImg(){
 		index = data.length;
 	}
 	//change the image
+	imgEl.src = data[index].image;
+	
+	//set text fields and alt.
+	imgEl.src = data[index].image;
+	imgEl.alt = data[index].title;
+	imgEl.height = "600";
+	imgEl.width = "800";
+	document.querySelector("#gallery h3").innerHTML = data[index].title;
+	para.innerHTML = data[index].desc;
 }
 
 
